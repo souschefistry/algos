@@ -9,7 +9,7 @@ def sort_and_count_inversions(array):
     if len(array) < 2:
         return array, 0
     else:
-        m = len(array) / 2
+        m = len(array) // 2
         larr, larr_inv = sort_and_count_inversions(array[:m])
         rarr, rarr_inv = sort_and_count_inversions(array[m:])
         combo_arr, split_inv = merge_and_compute_split(larr, rarr)
