@@ -46,4 +46,4 @@ def merge_and_compute_split(larr, rarr):
 
 if __name__ == "__main__":
     arr = [1, 3, 5, 2, 4]
-    print "Count of inversions = %d" % (sort_and_count_inversions(arr)[1])
+    print("Count of inversions = {}".format(sort_and_count_inversions(arr)[1]))
